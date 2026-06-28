@@ -1,0 +1,71 @@
+Projeto de Clusterização — WineQT
+
+Descrição:
+Este projeto tem como objetivo aplicar técnicas de Machine Learning não supervisionado para realizar a segmentação de vinhos com base em atributos físico-químicos.
+O trabalho foi desenvolvido como um MVP (Minimum Viable Product), seguindo boas práticas de análise de dados, modelagem e documentação.
+
+Objetivo:
+Agrupar vinhos em clusters de acordo com suas características físico-químicas.
+
+Comparar diferentes algoritmos de clusterização (K-Means, DBSCAN e Hierárquico).
+
+Extrair insights de negócio a partir dos grupos formados (ex.: segmentação premium vs entrada, acidez, teor alcoólico).
+
+Dataset:
+Fonte: WineQT Dataset (dados públicos).
+
+Atributos principais: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, alcohol, quality.
+
+Registros: ~1.600 vinhos.
+
+Tipo de tarefa: Clusterização (não supervisionado).
+
+Pipeline:
+Carregamento dos dados
+
+Análise exploratória
+
+Pré-processamento
+
+Baseline com K-Means
+
+Visualização em PCA
+
+Interpretação estatística
+
+Comparação com quality
+
+Modelos adicionais: DBSCAN e Hierárquico
+
+Refinamento de parâmetros
+
+Insights de negócio
+
+Conclusão final
+
+Resultados:
+
+K-Means: baseline sólido, clusters bem definidos.
+
+DBSCAN: revelou outliers relevantes.
+
+Hierárquico: flexibilidade na granularidade dos grupos.
+
+Métrica principal: Silhouette Score.
+
+Insights de negócio:
+
+Segmentação por teor alcoólico (premium vs entrada).
+
+Acidez como fator de diferenciação de mercado.
+
+Relação parcial entre clusters e qualidade sensorial.
+
+Outliers como potenciais vinhos especiais ou inconsistências de produção.
+
+Conclusão:
+
+O projeto cumpriu o objetivo inicial de segmentar vinhos e comparar algoritmos de clusterização.
+O K-Means foi escolhido como baseline, mas DBSCAN e Hierárquico trouxeram insights adicionais.
+Limitações incluem ausência de variável-alvo e dependência de métricas internas.
+Próximos passos: validar clusters com especialistas e explorar atributos adicionais.
